@@ -20,24 +20,24 @@ APP_ID = int(os.environ.get("APP_ID", "26543176"))
 API_HASH = os.environ.get("API_HASH", "9a86e743ad7cb3ac508262287f7b42c6")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001914348010"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001954753872"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "ElninoZls")
+OWNER = os.environ.get("OWNER", "bluyutzz")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://yvpkhgok:vQRU34p8xsOLUg8Oupji-9ci1EvYxCS1@john.db.elephantsql.com/yvpkhgok")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://miigzeto:QDf8r5z6Huupryi2ktI7d3R5-TycTPUM@lallah.db.elephantsql.com/miigzeto")
 
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1001626895216"))
-FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "-1001721038526"))
-FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "-1001854645499"))
+FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1001673468177"))
+FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
+FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "0"))
 FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 FORCE_SUB_5 = int(os.environ.get("FORCE_SUB_5", "0"))
 FORCE_SUB_6 = int(os.environ.get("FORCE_SUB_6", "0"))
@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1944312398").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5173997839").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
